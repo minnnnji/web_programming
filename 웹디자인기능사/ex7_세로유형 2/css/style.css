@@ -1,0 +1,27 @@
+
+*{padding: 0; margin: 0;text-align: center;font-size: 20px;}
+li{ list-style: none;}
+.classfix::before , .classfix::after{content: '';display: block;clear: both;}
+
+#wrap{width: 1200px;margin: 0px auto;color: #fff;}
+#side{float: left;width: 300px;}
+#content{float: left;width: 900px;}
+
+#side .logo{line-height: 150px;height: 150px;background-color: #111;}
+#side .nav{height: 700px;background-color: #222;}
+#side .nav li{background-color: #333;position: relative;}
+#side .nav li a{padding: 10px;display: block;}
+#side .nav li a:hover{background: salmon;}
+#side .nav li ul.subMenu{display: none;position: absolute;right: -200px;top: 0px;background-color: rgb(179, 226, 255);width: 200px;}
+#side .nav li ul.subMenu a:hover{background: lightskyblue;}
+
+#banner{background-color: #333;height: 450px;line-height: 450px;}
+
+#contents > div {float: left;width: 33.33333%;line-height: 300px;height: 300px;}
+#contents > .cont1{background-color: #444;}
+#contents > .cont2{background-color: #555;}
+#contents > .cont3{background-color: #666;}
+
+#footer .foot1{float: left;width: 200px;background-color: #777;height: 100px;line-height: 100px;}
+#footer .foot2{float: left;width: 700px;background-color: #888;height: 50px;line-height: 50px;}
+#footer .foot3{float: left;width: 700px;background-color: #999;height: 50px;line-height: 50px;}
