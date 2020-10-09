@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>수업_week6</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>로그인 정보</legend>
+                아이디 : <input type="text" id="user_id" placeholder="아이디를 입력하세요"><br>
+                비밀번호 : <input type="password" id= "pwd1"name="user_pw"><br>
+                비밀번호 확인 : <input type="password" id= "pwd2"name="user_pw_check"><br>
+                <input type="hidden" name="Token" value="xm234jq">
+            </fieldset>
+            <fieldset>
+                <legend>개인 정보</legend>
+                이름 : <input type="text" id="user_name"><br>
+                메일 주소 : <input type="email" id= "mail"><br>
+                연락처 : <input type="tel" id= "phone"><br>
+                블로그/홈페이지 : <input type="url" id="homep"><br>
+            </fieldset>
+            <input type="submit" value="submit">
+            <input type="reset" value="reset">
+            <br><br><br>
+            1부터 20까지의 짝수 : <input type="number" name="even" min="2" max="20" step="2"><br>
+            <br><br><br>
+
+            나이대를 골라보세요 : <br>
+            <input type="range" id="a" name="ages" min="10" max="60" step="10">
+            <br><br><br>
+            
+            좋아하는 색을 골라보세요 : <br>
+            <input type="color" name="mycolor" ><br>
+
+            <br><br><br>
+            <label><input type="date" id="start"></label> 
+            <label><input type="date" id="end"></label>
+
+        </form>
+        <br><br><br>
+        <form> <fieldset>
+            <legend>신청 과목</legend>
+            <p>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+            <label><input type="radio" name="subject" value="speaking">회화</label>
+            <label><input type="radio" name="subject" value="grammar">문법</label>
+            <label><input type="radio" name="subject" value="writing">작문</label>
+            </fieldset> <fieldset>
+            <legend>메일링</legend>
+            <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
+            <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+            <label><input type="checkbox" name="mailing2" value="dialog">5분 회화 </label> 
+            <label><input type="checkbox" name="mailing3" value="pops">모닝팝스</label>
+            </fieldset> </form>
+    </body>
+</html>
