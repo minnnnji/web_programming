@@ -25,24 +25,58 @@
 
             <section id="banner">
                 <img src="src/image/사진3.jpg">
-                
             </section>
 
             <section id="contents">
-                <div class="cont1">시간표</div>
-                <div class="cont2">달력</div>
-                <div class="cont3">할 일 목록</div>
-            </section>
-
-            <section id="aboutme">
-                <div class="img">
-                    <img src="src/image/라이터.gif">
+                <div class="cont1">
+                    <figcaption>
+                        < 2020 - 2학기 시간표 > <br><br>
+                    </figcaption>
+                    <table class = "timetable" border="1">
+                        <colgroup>
+                            <col style="width: 50px;">
+                            <col span = "5" style="width: 120px;">
+                            </colgroup>
+                        <tr>
+                            <td></td><th>MON</th><th>TUE</th><th>WEN</th><th>THU</th><th>FRI</th>
+                        </tr>
+                        <tr >
+                            <th class="time">12</th><td></td><td></td><td></td><td></td><td rowspan="3" style="background-color: #BFA68F;">기계학습<br><span class="small">최유경<br>센B106</span></td>
+                        </tr>
+                        <tr>
+                            <th class="time">1</th><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th class="time">2</th><td></td><td style="background-color: #F2DFCE;" rowspan="3">ES-디지털스토리텔링<br><span class="small">박철<br>군312</span></td><td style="background-color: #D9C3B0;" rowspan="3">ES-창업을위한디지털패션디자인<br><span class="small">김숙진,안민영<br>군318</span></td><td></td>
+                        </tr>
+                        <tr>
+                            <th class="time">3</th><td></td><td style="background-color: #F2EAE4;" rowspan="3">웹프로그래밍<br><span class="small">김형철<br>센B104</span></td><td></td>
+                        </tr>
+                        <tr>
+                            <th class="time">4</th><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th class="time">5</th><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <th class="time">6</th><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="cont4">게시판</div>
+        
+                <div class="cont2">달력</div>
+                <div class="cont3">할 일 목록<br>
+                    할일을 입력해주세요 <br><input type="text" id="input">
+                    <button onclick="input()">입력받기</button>
+                    <textarea id="output"></textarea>
+                    
+                </div>
             </section>
 
             <footer id="footer">
-                <div class="foot1"><h3>로고</h3></div>
+                <div class="foot1">
+                    <img src="src/image/logo.png">
+                </div>
                 <div class="foot2"><h3>Copyright 2020. minnnnji. All rights reserved</h3></div>
                 <div class="foot3">
                     <p class="num">
@@ -54,5 +88,14 @@
                 </div>
             </footer>
         </div>
+        <script>
+            function input(){
+                var input = document.getElementById("input").value;
+                document.getElementById("output").value = input;
+            }
+            function output(){
+                
+            }
+        </script>
     </body>
 </html>
