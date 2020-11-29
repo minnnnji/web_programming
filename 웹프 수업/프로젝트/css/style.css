@@ -12,7 +12,7 @@ a {text-decoration: none;}
 form{border: 2px dashed;}
 fieldset{border: none;}
 legend {text-align: center;}
-table {border : solid;border-collapse:collapse;margin-top: 10px;}
+table {border-collapse:collapse;margin-top: 10px;}
 button {padding: 7px;font-family: 'Jua'; border-radius: 10px;border: 1px solid; background-color: rgb(177, 134, 114);}
 a:link {color : rgb(72, 51, 41);}
 a:hover {color : rgb(177, 134, 114);}
@@ -29,7 +29,7 @@ a:visited { color: rgb(72, 51, 41); }
 #header li {display: inline; float: left;line-height: 100px;padding: 1px 40px;}
 
 #banner{width:100%;}
-#banner img{width: 100%; height: 100%;}
+#banner img{width: 100%;}
 
 #contents{ height: 470px;margin: 10px; }
 #contents > div{padding: 1%;height: 470px;float: left;width: 31.33%;}
@@ -42,18 +42,20 @@ a:visited { color: rgb(72, 51, 41); }
 #contents .cont1 .small{font-size: 12px;}
 /*cont1*/
 
-#contents .cont2{background-color:rgba(210, 129, 68, 0.434);border-radius: 20px;}
-#contents .cont2 table{position: relative;;left: 40px;border:solid rgb(69, 53, 41) ; height: 450px;width: 450px;padding: 10px;}
+#contents .cont2{background-color:rgba(99, 68, 50, 0.783);border-radius: 20px;}
+#contents .cont2 table{border:solid rgb(69, 53, 41) ;}
+#contents .cont2 figcaption {font-size: 25px; font-family: 'Bad Script';}
+#contents .cont2 img {width: 100%;}
 
 #contents .cont3 {font-size: 20px;font-family: 'Jua';color: rgb(67, 46, 30);}
 #contents .cont3 span {color: darkred;font-size: 13px;}
-#contents .cont3 form {padding: 12px;background-color:rgba(182, 124, 80, 0.468);border-radius: 20px;}
+#contents .cont3 form {padding: 12px;;background-color:rgba(182, 124, 80, 0.468);border-radius: 20px;}
 #contents .cont3 .Quiz1{padding: 10px; background-color:rgba(255, 255, 255, 0.721);border-radius: 20px;}
 #contents .cont3 .Quiz2{padding: 10px; background-color: rgba(255, 255, 255, 0.721);border-radius: 20px;}
 #contents .cont3 .Quiz3{padding: 10px; background-color:rgba(255, 255, 255, 0.721);border-radius: 20px;}
 /*cont3*/
 
-#footer {display: block;position: static;}
+#footer {display: block;position: relative;}
 #footer div {display: inline;}
 #footer .foot1{float: left;width: 33%;}
 #footer .foot1 img{height: 50px;}
