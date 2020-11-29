@@ -9,6 +9,11 @@
 *{padding: 0; margin: 0;text-align: center;font-size: 15px;font-family: 'MapoGoldenPier';font-weight: lighter;}
 li{ list-style: none;}
 a {text-decoration: none;}
+form{border: 2px dashed;}
+fieldset{border: none;}
+legend {text-align: center;}
+table {border : solid;border-collapse:collapse;margin-top: 10px;}
+button {padding: 7px;font-family: 'Jua'; border-radius: 10px;border: 1px solid; background-color: rgb(177, 134, 114);}
 a:link {color : rgb(72, 51, 41);}
 a:hover {color : rgb(177, 134, 114);}
 a:visited { color: rgb(72, 51, 41); }
@@ -26,23 +31,33 @@ a:visited { color: rgb(72, 51, 41); }
 #banner{width:100%;}
 #banner img{width: 100%; height: 100%;}
 
-#contents{ height: 400px;margin: 10px; }
-#contents > div{padding: 1%;height: 400px;float: left;width: 31.33%;}
-#contents > .cont1{color: rgba(172, 115, 80);}
-#contents > .cont2{background-color:rgb(116, 61, 19)}
-#contents > .cont3{background-color: rgb(182, 125, 80)}
+#contents{ height: 470px;margin: 10px; }
+#contents > div{padding: 1%;height: 470px;float: left;width: 31.33%;}
+
+#contents .cont1{color: rgb(72, 65, 59);}
 #contents .cont1 table {border-style: none;}
-#contents .timetable{font-family: 'Nanum Gothic';border-collapse:collapse;border:0.1px dotted rgb(46, 41, 37);}
-#contents tr {font-size: 15px;text-align: center; height: 45px;}
-#contents td{font-size: 14px;font-weight: 500;}
-#contents .small{font-size: 12px;}
-#contents .ML{background-color: salmon;}
+#contents .cont1 .timetable{font-family: 'Nanum Gothic';border-collapse:collapse;border:0.1px rgb(46, 41, 37);}
+#contents .cont1 tr {font-size: 15px;text-align: center; height: 55px;}
+#contents .cont1 td{font-size: 14px;font-weight: 500;}
+#contents .cont1 .small{font-size: 12px;}
+/*cont1*/
+
+#contents .cont2{background-color:rgba(210, 129, 68, 0.434);border-radius: 20px;}
+#contents .cont2 table{position: relative;;left: 40px;border:solid rgb(69, 53, 41) ; height: 450px;width: 450px;padding: 10px;}
+
+#contents .cont3 {font-size: 20px;font-family: 'Jua';color: rgb(67, 46, 30);}
+#contents .cont3 span {color: darkred;font-size: 13px;}
+#contents .cont3 form {padding: 12px;background-color:rgba(182, 124, 80, 0.468);border-radius: 20px;}
+#contents .cont3 .Quiz1{padding: 10px; background-color:rgba(255, 255, 255, 0.721);border-radius: 20px;}
+#contents .cont3 .Quiz2{padding: 10px; background-color: rgba(255, 255, 255, 0.721);border-radius: 20px;}
+#contents .cont3 .Quiz3{padding: 10px; background-color:rgba(255, 255, 255, 0.721);border-radius: 20px;}
+/*cont3*/
 
 #footer {display: block;position: static;}
 #footer div {display: inline;}
-#footer .foot1{float: left;width: 30%;}
+#footer .foot1{float: left;width: 33%;}
 #footer .foot1 img{height: 50px;}
-#footer .foot2 h3{float: left;width: 40%;font-family: 'Amiri';font-size: 20px;margin: 10px 0px 10px 0px; color: rgb(91, 78, 63);}
-#footer .foot3{float: left;width: 30%;}
-#footer .foot3 img {height: 25px; width: 25px;}
-#footer p {font-size: 15px; display: inline;font-family: 'Bad Script';line-height: 60px;}
+#footer .foot2 h3{float: left;width: 33%;font-family: 'Amiri';font-size: 20px;margin: 10px 0px 10px 0px; color: rgb(91, 78, 63);}
+#footer .foot3{float: left;width: 33%;}
+#footer .foot3 img {position: relative;height: 25px; width: 25px;padding: 4px;top: 12px;}
+#footer .foot3 p {font-size: 15px; display: inline;font-family: 'Amiri';line-height: 20px;}

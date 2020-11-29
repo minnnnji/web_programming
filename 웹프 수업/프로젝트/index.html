@@ -64,12 +64,52 @@
                     </table>
                 </div>
         
-                <div class="cont2">달력</div>
-                <div class="cont3">할 일 목록<br>
-                    할일을 입력해주세요 <br><input type="text" id="input">
-                    <button onclick="input()">입력받기</button>
-                    <textarea id="output"></textarea>
-                    
+                <div class="cont2">갤러리
+                    <table border="1">
+                        <colgroup>
+                            <col span = "3" style="width: 200px;">
+                        </colgroup>
+                        <tr>
+                            <td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td></td><td></td><td></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="cont3">About me<br><span> <주의> 체크를 다 하지 않으면 정답을 확인 할 수 없어요 !</span><br>
+                    <form name="form">
+                        
+                        <fieldset class="Quiz1">
+                                <h3>퀴즈 1 : 이 중 내가 가장 좋아하는 노래는?</h3>
+                                <br>   
+                                <label><input type="radio" name="q1" value="song1"> 마마무 - AYA</label><br>
+                                <label><input type="radio" name="q1" value="song2"> 마미손 - 사랑은(feat.원슈타인)</label><br>
+                                <label><input type="radio" name="q1" value="song3"> 공기남 - 인셉션</label>
+                        </fieldset>
+                        <br>
+                        <fieldset class="Quiz2">
+                            <h3>퀴즈 2 : 이 중 내가 보지 않은 영화는?</h3>
+                            <br>   
+                            <label><input type="radio" name="q2" value="movie1"> 해리포터</label><br>
+                            <label><input type="radio" name="q2" value="movie2"> 레미제라블</label><br>
+                            <label><input type="radio" name="q2" value="movie3"> 캡틴 아메리카: 시빌 워</label>
+                        </fieldset>
+                        <br>
+                        <fieldset class="Quiz3">
+                            <h3>퀴즈 3 : 이 중 내가 먹지 못하는 음식은?</h3>
+                            <br>   
+                            <label><input type="radio" name="q3" value="food1"> 오이</label><br>
+                            <label><input type="radio" name="q3" value="food2"> 토마토</label><br>
+                            <label><input type="radio" name="q3" value="food3"> 가지</label>
+                        </fieldset>
+                        <br>
+                        <button type="submit" name="button" onclick="output()">정답 갯수</button>
+                    </form>    
                 </div>
             </section>
 
@@ -79,22 +119,37 @@
                 </div>
                 <div class="foot2"><h3>Copyright 2020. minnnnji. All rights reserved</h3></div>
                 <div class="foot3">
+                    <p class="emaill">
+                        <img src="src/image/email.svg"> 99x04@naver.com
+                    </p>
                     <p class="num">
                         <img src="src/image/number.svg"> 010 4328 8272
                     </p>
-                    <p class="sns">
-                        <img src="src/image/insta.svg"> m.__zzi
-                    </p>
+                    
+                    <img src="src/image/insta.svg"> <p class="sns">m.__zzi</p>
                 </div>
             </footer>
         </div>
         <script>
-            function input(){
-                var input = document.getElementById("input").value;
-                document.getElementById("output").value = input;
-            }
             function output(){
+                var sum = 0;
                 
+                var q1 = document.querySelector('input[name="q1"]:checked').value;
+                var q2 = document.querySelector('input[name="q2"]:checked').value;
+                var q3 = document.querySelector('input[name="q3"]:checked').value;
+                    if (q1 == 'song3'){
+                        sum+=1
+                    }
+
+                    if (q2 == 'movie3'){
+                        sum+=1
+                    }
+
+                    if (q3 == 'food2'){
+                        sum+=1
+                    }
+                alert( sum+ "개 입니다 ! ")
+                history.back();
             }
         </script>
     </body>
