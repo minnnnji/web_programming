@@ -11,7 +11,7 @@
     </head>
     <body>
         <div id="wrap">
-            <header id = "header">
+            <header id = "header" class="classfix">
                 <h1 class="logo">MINNNNJI's Home P</h1>
                 <nav class="nav">
                     <ul>
@@ -24,10 +24,12 @@
             </header>
 
             <section id="banner">
-                <img src="src/image/사진3.jpg">
+                <button onclick="changeImg()">
+                    <img id="img" src="src/image/사진3.jpg">
+                </button>
             </section>
 
-            <section id="contents">
+            <section id="contents" class="classfix">
                 <div class="cont1">
                     <figcaption>
                         < 2020 - 2학기 시간표 > <br><br>
@@ -96,8 +98,8 @@
                         <fieldset class="Quiz1">
                                 <h3>퀴즈 1 : 이 중 내가 가장 좋아하는 노래는?</h3>
                                 <br>   
-                                <label><input type="radio" name="q1" value="song1"> 마마무 - AYA</label><br>
-                                <label><input type="radio" name="q1" value="song2"> 마미손 - 사랑은(feat.원슈타인)</label><br>
+                                <label><input type="radio" name="q1" value="song1"> 정승환 - 언제라도 어디에서라도</label><br>
+                                <label><input type="radio" name="q1" value="song2"> 윤지영 - 언젠가 너와 나(feat.카 더 가든)</label><br>
                                 <label><input type="radio" name="q1" value="song3"> 공기남 - 인셉션</label>
                         </fieldset>
                         <br>
@@ -122,7 +124,7 @@
                 </div>
             </section>
 
-            <footer id="footer">
+            <footer id="footer" class="classfix">
                 <div class="foot1">
                     <img src="src/image/logo.png">
                 </div>
@@ -140,6 +142,10 @@
             </footer>
         </div>
         <script>
+            var imgArray = new Array()
+
+            imgArray[0] = "../프로젝트/src/image/사진2.jpg"
+            imgArray[1] = "../프로젝트/src/image/사진3.jpg"
             function output(){
                 var sum = 0;
                 
@@ -159,6 +165,13 @@
                     }
                 alert( sum+ "개 입니다 ! ")
                 history.back();
+            }
+
+            function changeImg(){
+                
+                var imgNum = Math.round(Math.random()*1);
+                document.getElementById("img").src = imgArray[imgNum]
+
             }
         </script>
     </body>
